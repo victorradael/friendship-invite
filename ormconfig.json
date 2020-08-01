@@ -7,20 +7,25 @@
     "username": "postgres",
     "password": "docker",
     "database": "yourDataBase",
-    "entities": ["./src/modules/**/infra/typeorm/entities/*.ts"],
-    "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
+    "entities": [
+      "./src/orm/entities/*.ts"
+    ],
+    "migrations": [
+      "./src/orm/migrations/*.ts"
+    ],
     "cli": {
-      "migrationsDir": "./src/shared/infra/typeorm/migrations"
+      "migrationsDir": "./src/orm/migrations"
     }
   },
   {
     "name": "mongo",
     "type": "mongodb",
-    "host": "localhost",
+    "host": "mongodb+srv://teste:teste123@cluster0-wo1n0.mongodb.net/friendship-invite?retryWrites=true&w=majority",
     "port": 27017,
-
-    "database": "yourDataBase",
+    "database": "friendship-invite",
     "useUnifiedTopology": true,
-    "entities": ["./src/modules/**/infra/typeorm/schemas/*.ts"]
+    "entities": [
+      "./src/orm/schemas/*.ts"
+    ]
   }
 ]
