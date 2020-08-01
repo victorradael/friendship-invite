@@ -27,11 +27,6 @@ export default class CreateUsers1596246588780 implements MigrationInterface {
             type: 'varchar',
             isNullable: false,
           },
-          {
-            name: 'date',
-            type: 'timestamp with time zone',
-            isNullable: false,
-          },
         ],
       })
     );
