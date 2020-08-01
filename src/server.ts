@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import express, { json } from 'express';
+import './orm';
 
 const app = express();
 app.use(json());

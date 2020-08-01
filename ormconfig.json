@@ -5,8 +5,8 @@
     "host": "localhost",
     "port": 5432,
     "username": "postgres",
-    "password": "docker",
-    "database": "yourDataBase",
+    "password": "postgres1235",
+    "database": "friendship",
     "entities": [
       "./src/orm/entities/*.ts"
     ],
